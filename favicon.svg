@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Nền tròn -->
+  <circle cx="50" cy="50" r="45" fill="#4285F4"/>
+  
+  <!-- Chữ "A" và "V" stylized -->
+  <path d="M30 25 L45 75 L55 75 L70 25 L60 25 L50 62 L40 25 Z" fill="white"/>
+  
+  <!-- Sóng âm thanh -->
+  <path d="M20 50 Q25 40, 20 30" stroke="white" stroke-width="3" fill="none"/>
+  <path d="M15 50 Q20 35, 15 20" stroke="white" stroke-width="3" fill="none"/>
+  <path d="M80 50 Q75 40, 80 30" stroke="white" stroke-width="3" fill="none"/>
+  <path d="M85 50 Q80 35, 85 20" stroke="white" stroke-width="3" fill="none"/>
+</svg>

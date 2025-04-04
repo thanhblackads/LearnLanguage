@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game luyện gõ và phát âm tiếng Anh Hỗ Trợ Hoc Từ Mới">
+    <meta name="keywords" content="tiếng Anh, từ vựng, lớp 6, phát âm, luyện gõ, học từ mới">
+    <meta name="author" content="Your Name">
+    <title>Game Tập Gõ & Phát Âm Tiếng Anh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Nút mở cài đặt -->
+    <button id="settings-button" aria-label="Cài đặt">Cài đặt</button>
+
+    <!-- Panel Cài đặt (ẩn) -->
+    <div id="settings-panel">
+        <h2>Cài đặt Giọng Đọc</h2>
+        <label for="voice-select">Chọn Giọng Đọc (Tiếng Anh):</label>
+        <select id="voice-select" name="voice">
+            <option value="">-- Đang tải giọng đọc --</option>
+        </select>
+        <button id="close-settings-button">Đóng</button>
+    </div>
+
+    <!-- Khu vực Game -->
+    <div id="game-area">
+        <h1>Luyện Gõ & Phát Âm Tiếng Anh (Lớp 6)</h1>
+
+        <div id="tts-support-notice" class="support-notice">
+             Trình duyệt của bạn không hỗ trợ phát âm mẫu (TTS).
+         </div>
+        <div id="api-support-notice" class="support-notice">
+            Trình duyệt của bạn có thể không hỗ trợ nhận dạng giọng nói (STT). Phần kiểm tra phát âm sẽ được bỏ qua.
+        </div>
+        <div id="dictionary-error-notice" class="support-notice">
+            <!-- Nội dung lỗi sẽ được cập nhật bằng JS -->
+        </div>
+
+
+        <div id="instructions">
+            Gõ lại từ tiếng Anh, nhấn <strong>Enter</strong>. Nghe và phát âm lại.
+        </div>
+
+        <!-- Phần hiển thị từ và nghĩa -->
+        <div id="word-to-type">Đang tải...</div>
+        <div id="word-meaning"></div> <!-- Hiển thị nghĩa tiếng Việt -->
+
+        <input type="text" id="typing-input" placeholder="Gõ từ và nhấn Enter..." autocomplete="off" disabled>
+
+        <div id="feedback"></div>
+        <div id="speech-feedback"></div>
+
+        <div id="stats">
+            Điểm: <span id="score">0</span> |
+            Lần nói sai: <span id="speech-attempts-count">0</span>/3
+        </div>
+
+        <button id="start-button" disabled>Bắt đầu!</button> <!-- Disable nút Start ban đầu -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
